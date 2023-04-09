@@ -3,20 +3,23 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link rel="stylesheet" href="assets/css/typography.css">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/utilities.css">
+  <link rel="stylesheet" href="assets/css/vendor/slick.css">
+  <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
 </head>
 <body class="helvetica">
-
-  <header class="clr-yellow bg-green">
-    <div class="flex items-center">
+  <header class="clr-yellow bg-green text-2xl">
+    <div class="flex items-center justify-between">
       <div class="logo">
         <img src="assets/img/logo/logo-ka.svg" alt="">
       </div>
 
       <div class="flex">
-        <nav>
-          <ul class="flex">
+        <nav class="pl-6 pr-1">
+          <ul class="flex capitalize">
             <li>Vision</li>
             <li>Product</li>
             <li>Gallery</li>
@@ -26,7 +29,7 @@
             <li>Contact</li>
           </ul>
         </nav>
-        <div class="lang-switch flex">
+        <div class="lang-switch flex uppercase">
           <div class="">
             en
           </div>
@@ -47,29 +50,445 @@
     </div>
   </header>
   <section class="header">
-
+    <div class="main-banner relative">
+      <div class="img-full" style="background-image: url(assets/img/banner-main.jpg)">
+        <div class="main-banner--info rgba-green clr-yellow p-6">
+          <h1 class="text-5xl">NEW HOTELS BY ORBI GROUP</h1>
+          <div class="pt-1">
+            5 STAR HOTELS
+          </div>
+          <div class="pt-4 uppercase text-5xl">
+            FOR <span class="clr-green bg-yellow brd-radius">1 800 000</span>
+          </div>
+          <div class="pt-4 uppercase text-5xl">
+            ANNUAL INCOME <span class="clr-green bg-yellow brd-radius">400 000</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="vision">
+  <section class="vision bg-yellow pt-4 pb-3 pl-6">
+    <div class="section-title text-3xl flex items-center">
+      <span class="section-title--icon mr-2">
+        <img src="assets/img/icons/icon-section-title-green.svg" alt="">
+      </span>
+      <h2 class="clr-green uppercase">Vision</h2>
+    </div>
 
-  </section>
-  <section class="product">
 
-  </section>
-  <section class="Gallery">
 
-  </section>
-  <section class="Management">
+    <div class="vision-slider pt-6 pl-4">
+      <div class="slider-container">
+        <div class="slider">
+          <div>
+            <div class="main main-add bg-green">
+              <div class="img-cover img-vision" style="background-image: url(assets/img/vision/vision-01.png);"></div>
+              <div class="img-text clr-yellow p-2">
+                <div>
+                  CREATION OF 5 STAR
+                  MULTIFUNCTION
+                  HOTEL HUB
+                </div>
+                <div class="text-xs">
+                  TWO TOWERS
+                  42 FLOORS EACH
+                  4UNDERGROUND FLOORS
+                  140 000 M2 TOTAL AREA
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="main">
+              <div class="img-cover img-vision" style="background-image: url(assets/img/vision/vision-01.png);"></div>
+              <div class="img-text bg-green clr-yellow p-2">
+                <span>LUXURY DEPARTMENT STORE</span><br/>
+                <span class="text-sm">Premium segment mall,
+                  10,000 m2</span>
+                </div>
+              </div>
+            </div>
 
-  </section>
-  <section class="Media">
 
-  </section>
-  <section class="Stakeholders">
+            <div>
+              <div class="main">
+                <div class="img-cover img-vision" style="background-image: url(assets/img/vision/vision-01.png);"></div>
+                <div class="img-text bg-green clr-yellow p-2">
+                  <span>HOTEL HUB</span><br/>
+                  <span class="text-sm">1,394 rooms</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="main">
+                <div class="img-cover img-vision" style="background-image: url(assets/img/vision/vision-01.png);"></div>
+                <div class="img-text bg-green clr-yellow p-2">
+                  <span>HOTEL HUB</span><br/>
+                  <span class="text-sm">1,394 rooms</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="main">
+                <div class="img-cover img-vision" style="background-image: url(assets/img/vision/vision-01.png);"></div>
+                <div class="img-text bg-green clr-yellow p-2">
+                  <span>HOTEL HUB</span><br/>
+                  <span class="text-sm">1,394 rooms</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="main">
+                <div class="img-cover img-vision" style="background-image: url(assets/img/vision/vision-01.png);"></div>
+                <div class="img-text bg-green clr-yellow p-2">
+                  <span>HOTEL HUB</span><br/>
+                  <span class="text-sm">1,394 rooms</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="main">
+                <div class="img-cover img-vision" style="background-image: url(assets/img/vision/vision-01.png);"></div>
+                <div class="img-text bg-green clr-yellow p-2">
+                  <span>HOTEL HUB</span><br/>
+                  <span class="text-sm">1,394 rooms</span>
+                </div>
+              </div>
+            </div>
 
-  </section>
-  <section class="contact">
+          </div>
 
-  </section>
+        </div>
+      </div>
 
-</body>
-</html>
+    </section>
+
+    <section class="product bg-green pt-4 pb-6 pl-6 pr-6 clr-yellow" style="background-image: url('assets/img/product-bg.png')">
+      <div class="section-title text-3xl flex items-center">
+        <span class="section-title--icon mr-2">
+          <img src="assets/img/icons/icon-section-title-yellow.svg" alt="">
+        </span>
+        <h2 class="clr-yellow uppercase">PRODUCT AND ACQUISITION COST</h2>
+      </div>
+      <div class="product-wrapper img-cover">
+
+        <div class="product-list flex text-xl justify-center pt-8 items-center">
+          <div class="product-item">
+            <div class="m-2">
+              900m<sup>2</sup>
+            </div>
+            <div class="button bg-yellow clr-green">
+              USD 1 800 000
+            </div>
+          </div>
+          <div class="product-item" style="margin-top: -30px;">
+            <div class="per-room">
+              PER<br/>
+              ROOM
+            </div>
+            <div class="button bg-yellow clr-green">
+              USD 1 800 000
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="per-m2">
+              PER<br/>
+              m2
+            </div>
+            <div class="button bg-yellow clr-green">
+              USD 1 800 000
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex pt-8 justify-between max-w-10" style="margin: 0 auto;">
+
+        <div class="text-2xl">
+          <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+          HOTEL
+        </div>
+
+        <div class="text-2xl">
+          18 ROOMS
+        </div>
+
+        <div class="">
+          TURN KEY: INCLUDING FF&E AND OS&E
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="Gallery">
+
+      <div class="slider-for">
+        <div>
+          <div class="img-full" style="background-image: url('assets/img/gallery/gallery-01.png')">
+          </div>
+        </div>
+
+        <div>
+          <div class="img-full" style="background-image: url('assets/img/gallery/gallery-01.png')">
+          </div>
+        </div>
+
+        <div>
+          <div class="img-full" style="background-image: url('assets/img/gallery/gallery-01.png')">
+          </div>
+        </div>
+
+        <div>
+          <div class="img-full" style="background-image: url('assets/img/gallery/gallery-01.png')">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slider-nav">
+
+        <div>
+          <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png'); width: 100px;height: 100px;">
+          </div>
+        </div>
+
+        <div>
+          <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png'); width: 100px;height: 100px;">
+          </div>
+        </div>
+
+        <div>
+          <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png'); width: 100px;height: 100px;">
+          </div>
+        </div>
+
+        <div>
+          <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png'); width: 100px;height: 100px;">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="Management bg-yellow pt-4 pb-6 pl-6 pr-6">
+      <div class="section-title text-3xl flex items-center">
+        <span class="section-title--icon mr-2">
+          <img src="assets/img/icons/icon-section-title-green.svg" alt="">
+        </span>
+        <h2 class="uppercase clr-green">MANAGEMENT OPTIONS</h2>
+      </div>
+      <div class="pt-6 pb-2">
+        All options can be switched during 5 years period, with a 6-month advance notificatio
+      </div>
+      <div class="options-list flex justify-center items-start content-center">
+        <div class="option-item max-w-3">
+          <div class="option-item-title text-xl clr-yellow uppercase">
+            SELF MANAGED <br/>
+          </div>
+          <div class="option-description text-lg px-3 pt-1">
+            The hotel can be managed by only 2 people, Sales and Administration are needed only, while every other service is provided by International Operators on demand, including housekeeping, reception, front office, room service, engineering, IT, etc.
+          </div>
+        </div>
+        <div class="option-item">
+          <div class="option-item-title text-xl clr-yellow uppercase">
+            Management <br/> Contract
+          </div>
+          <div class="option-description max-w-3 text-lg px-3 pt-1">
+            For at least 5 years, with a service fee of 10% from EBITDA.
+          </div>
+        </div>
+        <div class="option-item">
+          <div class="option-item-title text-xl max-w-3 clr-yellow uppercase">
+            Guaranteed <br/> Income
+          </div>
+          <div class="option-description max-w-3 text-lg px-3 pt-1">
+            We offer a guaranteed income of 7% capped, with the First Class Bank Guarantee.
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="Media bg-green pt-4 pb-6 pl-6 pr-6">
+      <div class="section-title text-3xl flex items-center">
+        <span class="section-title--icon mr-2">
+          <img src="assets/img/icons/icon-section-title-yellow.svg" alt="">
+        </span>
+        <h2 class="uppercase clr-yellow">Media</h2>
+      </div>
+
+    </section>
+
+    <section class="Stakeholders bg-yellow">
+      <div class="row">
+        <div class="col-2 relative">
+          <div class="section-title text-3xl flex items-center absolute pt-4 pb-6 pl-6 pr-6" style="z-index:2;">
+            <span class="section-title--icon mr-2">
+              <img src="assets/img/icons/icon-section-title-green.svg" alt="">
+            </span>
+            <h2 class="uppercase clr-green">STAKEHOLDERS</h2>
+          </div>
+          <div class="stackeholders-slider">
+            <div>
+              <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png'); width: 100%;padding-bottom: 100%">
+              </div>
+            </div>
+
+            <div>
+              <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png'); width: 100%;padding-bottom: 100%">
+              </div>
+            </div>
+
+            <div>
+              <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png'); width: 100%;padding-bottom: 100%">
+              </div>
+            </div>
+
+            <div>
+              <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png'); width: 100%;padding-bottom: 100%">
+              </div>
+            </div>
+          </div>
+          <div class="orbi-group absolute">
+            <div class="rgba-green-secondary p-3 flex">
+              <div class="logo-orbigroup">
+                <img src="assets/img/logo/logo-orbigroup.svg" alt="">
+              </div>
+              <div class="pl-4 clr-white">
+                <img src="assets/img/icons/orbigroup-title.svg" alt="" style="width: 120px;">
+                <div class="uppercase text-xs pt-1">
+                  ONE OF THE LARGEST REAL ESTATE DEVELOPERS IN EUROPE AND GEORGIA
+                </div>
+                <div class="flex text-xs pt-3">
+                  <div class="list-bullets">
+                    <ul>
+                      <li>Over 22 years of successful operation</li>
+                      <li>More than 3 million square meters constructed</li>
+                    </ul>
+                  </div>
+                  <div class="list-bullets">
+                    <ul>
+                      <li>Over 22 years of successful operation</li>
+                      <li>More than 3 million square meters constructed</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-2 bg-black pt-4 pb-6 pl-6 pr-6 relative">
+          <div class="orbi-group absolute">
+            <div class="p-3 flex">
+              <div class="logo-block">
+                <img src="assets/img/logo/logo-blocks.svg" alt="">
+              </div>
+              <div class="clr-white pl-4 clr-white">
+                <img src="assets/img/logo/logo-blocks-title.svg" alt="" style="width: 120px;">
+                <div class="uppercase text-xs pt-1">
+                  ONE OF THE LARGEST INVESTMENT HOLDINGS IN GEORGIA
+                </div>
+                <div class="list-bullets text-xs pt-3">
+                  <ul>
+                    <li>Over 22 years of successful operation</li>
+                    <li>More than 3 million square meters constructed</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <footer class="contact flex clr-yellow items-center justify-center pt-3 pb-3 pl-6 pr-6">
+      <div class="">
+        +995 322 200 700
+      </div>
+      <span class="dot bg-yellow"></span>
+      <div class="">
+        +995 591 451 451
+      </div>
+      <span><img src="assets/img/icons/icon-contact-01.svg" alt=""></span>
+      <span><img src="assets/img/icons/icon-contact-02.svg" alt=""></span>
+    </fotter>
+
+
+    <script type="text/javascript" src="assets/js/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        prevArrow: false,
+        nextArrow: false,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    });
+
+    // large slider
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true
+    });
+    // stackholders slider
+    $('.stackeholders-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+    </script>
+  </body>
+  </html>
