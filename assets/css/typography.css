@@ -1,0 +1,47 @@
+@font-face {
+    font-family: '../fonts/HelveticaNeueLTGEO-55Roman';
+    src: url('../fonts/HelveticaNeueLTGEO-55Roman.eot');
+    src: url('../fonts/HelveticaNeueLTGEO-55Roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueLTGEO-55Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTGEO-55Roman.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTGEO-55Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd-Cn';
+    src: url('../fonts/HelveticaNeueLTStd-Cn.eot');
+    src: url('../fonts/HelveticaNeueLTStd-Cn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueLTStd-Cn.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTStd-Cn.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTStd-Cn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.eot');
+    src: url('../fonts/Helvetica.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Helvetica.woff2') format('woff2'),
+        url('../fonts/Helvetica.woff') format('woff'),
+        url('../fonts/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.helvetica:lang(en) {
+  font-family: 'Helvetica';
+}
+.helvetica:lang(ka) {
+  font-family: 'HelveticaNeueLTGEO-55Roman';
+}
+.uppercase:lang(en) {
+  text-transform: uppercase;
+}
+.uppercase:lang(ka) {
+
+}
