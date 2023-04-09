@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/typography.css">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -312,17 +313,54 @@
       </div>
 
     </section>
-    <section class="Media bg-green pt-4 pb-6 pl-6 pr-6">
+    <section class="media bg-green pt-4 pb-6 pl-6 pr-6 clr-yellow">
       <div class="section-title text-3xl flex items-center">
         <span class="section-title--icon mr-2">
           <img src="assets/img/icons/icon-section-title-yellow.svg" alt="">
         </span>
         <h2 class="uppercase clr-yellow">Media</h2>
       </div>
+      <div class="flex items-center justify-center">
+
+      <div class="row flex max-w-10">
+        <div class="col-2">
+          <div class="">
+            <div class="h6">
+              Television
+            </div>
+            <div class="pl-2 pt-1">
+              <ul>
+                <li><span class="icon-play"><img src="assets/img/icons/icon-play.svg" alt=""></span> FOBES</li>
+                <li><span class="icon-play"><img src="assets/img/icons/icon-play.svg" alt=""></span> Forbes</li>
+                <li><span class="icon-play"><img src="assets/img/icons/icon-play.svg" alt=""></span> Forbes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="h6 pt-4">
+            Presentation
+          </div>
+          <div class="pl-2 pt-1 text-xs">
+            <ul>
+              <li><span class="icon-play"><img src="assets/img/icons/icon-docs.svg" alt=""></span> CENTRAL PARK TOWERS BY ORBI AND BLOCK</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="video">
+            <video autoplay loop muted playsinline id="myVideo">
+              <source
+              src="assets/video/sample-30s.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
     </section>
 
-    <section class="Stakeholders bg-yellow">
+    <section class="stakeholders bg-yellow">
       <div class="row">
         <div class="col-2 relative">
           <div class="section-title text-3xl flex items-center absolute pt-4 pb-6 pl-6 pr-6" style="z-index:2;">
@@ -352,17 +390,18 @@
               </div>
             </div>
           </div>
-          <div class="orbi-group absolute">
-            <div class="rgba-green-secondary p-3 flex">
+
+          <div class="info-box info-box-footer absolute">
+            <div class="rgba-green-secondary p-2 flex brd-2">
               <div class="logo-orbigroup">
                 <img src="assets/img/logo/logo-orbigroup.svg" alt="">
               </div>
-              <div class="pl-4 clr-white">
+              <div class="pl-2 clr-white">
                 <img src="assets/img/icons/orbigroup-title.svg" alt="" style="width: 120px;">
-                <div class="uppercase text-xs pt-1">
+                <div class="uppercase text-xxs pt-1">
                   ONE OF THE LARGEST REAL ESTATE DEVELOPERS IN EUROPE AND GEORGIA
                 </div>
-                <div class="flex text-xs pt-3">
+                <div class="flex text-xxs pt-2">
                   <div class="list-bullets">
                     <ul>
                       <li>Over 22 years of successful operation</li>
@@ -378,22 +417,23 @@
                 </div>
               </div>
             </div>
-
           </div>
 
         </div>
+
+
         <div class="col-2 bg-black pt-4 pb-6 pl-6 pr-6 relative">
-          <div class="orbi-group absolute">
-            <div class="p-3 flex">
+          <div class="info-box info-box-footer absolute">
+            <div class="p-2 clr-white flex">
               <div class="logo-block">
                 <img src="assets/img/logo/logo-blocks.svg" alt="">
               </div>
-              <div class="clr-white pl-4 clr-white">
+              <div class="clr-white pl-4 clr-white text-xxs">
                 <img src="assets/img/logo/logo-blocks-title.svg" alt="" style="width: 120px;">
-                <div class="uppercase text-xs pt-1">
+                <div class="uppercase pt-1">
                   ONE OF THE LARGEST INVESTMENT HOLDINGS IN GEORGIA
                 </div>
-                <div class="list-bullets text-xs pt-3">
+                <div class="list-bullets pt-2">
                   <ul>
                     <li>Over 22 years of successful operation</li>
                     <li>More than 3 million square meters constructed</li>
@@ -401,9 +441,9 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
+
       </div>
 
     </section>
@@ -481,14 +521,16 @@
       centerMode: true,
       focusOnSelect: true
     });
+
     // stackholders slider
     $('.stackeholders-slider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
       fade: true,
-      asNavFor: '.slider-nav'
+      dots: false
     });
+
     </script>
   </body>
   </html>

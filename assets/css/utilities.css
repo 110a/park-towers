@@ -202,6 +202,8 @@
 
 
 /*font sizes*/
+.text-xxxs	{font-size: 1rem; /* 10px */      line-height: 1rem; /* 10px */ }
+.text-xxs	{font-size: 1.1rem; /* 11px */      line-height: 1.1rem; /* 11px */ }
 .text-xs	{font-size: 1.2rem; /* 12px */      line-height: 1.2rem; /* 12px */ }
 .text-sm	{font-size: 1.4rem; /* 14px */      line-height: 1.6rem; /* 20px */ }
 .text-base	{font-size: 1.6rem; /* 16px */      line-height: 2.4rem; /* 24px */ }
@@ -270,4 +272,11 @@ color: #ffffff;
 }
 .col-2 {
   width: 50%;
+}
+/* border radius */
+.brd-2 {
+  border-radius: 20px;
+}
+video {
+  width: 100%;
 }
