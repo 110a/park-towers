@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/utilities.css">
   <link rel="stylesheet" href="assets/css/vendor/slick.css">
   <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body class="helvetica">
   <header class="clr-yellow bg-green text-2xl">
@@ -20,14 +21,14 @@
 
       <div class="flex items-end">
         <nav class="pl-6 pr-1">
-          <ul class="flex capitalize">
-            <li>Vision</li>
-            <li>Product</li>
-            <li>Gallery</li>
-            <li>Management</li>
-            <li>Media</li>
-            <li>Stakeholders</li>
-            <li>Contact</li>
+          <ul class="flex capitalize" id="mainNav">
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#management">Management</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#stakeholders">Stakeholders</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="lang-switch flex pl-4">
@@ -69,7 +70,7 @@
     </div>
   </section>
 
-  <section class="vision bg-yellow pt-4 pb-4 pl-6">
+  <section class="vision bg-yellow pt-4 pb-4 pl-6" id="vision">
     <div class="section-title text-3xl flex items-center">
       <span class="section-title--icon mr-2">
         <img src="assets/img/icons/icon-section-title-green.svg" alt="">
@@ -172,7 +173,7 @@
 
       </section>
 
-      <section class="product bg-green pt-4 pb-8 pl-6 pr-6 clr-yellow img-cover" style="background-image: url('assets/img/product-bg.png')">
+      <section class="product bg-green pt-4 pb-8 pl-6 pr-6 clr-yellow img-cover" style="background-image: url('assets/img/product-bg.png')" id="product">
         <div class="section-title text-3xl flex items-center">
           <span class="section-title--icon mr-2">
             <img src="assets/img/icons/icon-section-title-yellow.svg" alt="">
@@ -240,6 +241,10 @@
             <div class="img-full" style="background-image: url('assets/img/gallery/gallery-01.png')">
             </div>
           </div>
+          <div>
+            <div class="img-full" style="background-image: url('assets/img/gallery/gallery-01.png')">
+            </div>
+          </div>
 
           <div>
             <div class="img-full" style="background-image: url('assets/img/gallery/gallery-01.png')">
@@ -262,7 +267,7 @@
           <div class="slider-nav">
 
             <div>
-              <div class="p-1">
+              <div class="p-05">
                 <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png');">
                 </div>
 
@@ -270,21 +275,28 @@
             </div>
 
             <div>
-              <div class="p-1">
+              <div class="p-05">
+                <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png');">
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div class="p-05">
                 <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png');">
                 </div>
               </div>
             </div>
 
             <div>
-              <div class="p-1">
+              <div class="p-05">
                 <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png');">
                 </div>
               </div>
             </div>
 
             <div>
-              <div class="p-1">
+              <div class="p-05">
                 <div class="img-cover" style="background-image: url('assets/img/gallery/gallery-01.png');">
                 </div>
               </div>
@@ -308,38 +320,38 @@
         <div class="max-w-10" style="margin: 0 auto;">
 
 
-        <div class="pt-6 pb-2 pl-2">
-          All options can be switched during 5 years period, with a 6-month advance notificatio
-        </div>
+          <div class="pt-6 pb-2 pl-2">
+            All options can be switched during 5 years period, with a 6-month advance notificatio
+          </div>
 
 
-        <div class="options-list flex justify-center items-start content-center flex-wrap">
-          <div class="option-item max-w-3">
-            <div class="option-item-title text-xl clr-yellow uppercase">
-              SELF MANAGED <br/>
+          <div class="options-list flex justify-center items-start content-center flex-wrap">
+            <div class="option-item max-w-3">
+              <div class="option-item-title text-xl clr-yellow uppercase">
+                SELF MANAGED <br/>
+              </div>
+              <div class="option-description text-lg px-3 pt-1">
+                The hotel can be managed by only 2 people, Sales and Administration are needed only, while every other service is provided by International Operators on demand, including housekeeping, reception, front office, room service, engineering, IT, etc.
+              </div>
             </div>
-            <div class="option-description text-lg px-3 pt-1">
-              The hotel can be managed by only 2 people, Sales and Administration are needed only, while every other service is provided by International Operators on demand, including housekeeping, reception, front office, room service, engineering, IT, etc.
+            <div class="option-item max-w-3">
+              <div class="option-item-title text-xl clr-yellow uppercase">
+                Management <br/> Contract
+              </div>
+              <div class="option-description max-w-3 text-lg px-3 pt-1">
+                For at least 5 years, with a service fee of 10% from EBITDA.
+              </div>
             </div>
-          </div>
-          <div class="option-item max-w-3">
-            <div class="option-item-title text-xl clr-yellow uppercase">
-              Management <br/> Contract
-            </div>
-            <div class="option-description max-w-3 text-lg px-3 pt-1">
-              For at least 5 years, with a service fee of 10% from EBITDA.
-            </div>
-          </div>
-          <div class="option-item max-w-3">
-            <div class="option-item-title text-xl max-w-3 clr-yellow uppercase">
-              Guaranteed <br/> Income
-            </div>
-            <div class="option-description max-w-3 text-lg px-3 pt-1">
-              We offer a guaranteed income of 7% capped, with the First Class Bank Guarantee.
+            <div class="option-item max-w-3">
+              <div class="option-item-title text-xl max-w-3 clr-yellow uppercase">
+                Guaranteed <br/> Income
+              </div>
+              <div class="option-description max-w-3 text-lg px-3 pt-1">
+                We offer a guaranteed income of 7% capped, with the First Class Bank Guarantee.
+              </div>
             </div>
           </div>
         </div>
-                </div>
 
       </section>
       <section class="media bg-green pt-4 pb-6 pl-6 pr-6 clr-yellow">
@@ -351,8 +363,8 @@
         </div>
 
         <div class="flex items-center justify-center py-4">
-          <div class="row flex max-w-10">
-            <div class="col-2 self-center">
+          <!-- <div class="row flex max-w-10"> -->
+            <!-- <div class="col-2 self-center">
               <div class="">
                 <div class="h6">
                   Television
@@ -382,8 +394,102 @@
                   type="video/mp4">
                 </video>
               </div>
+            </div> -->
+
+
+
+            <div class="container row flex max-w-10 pb-10">
+              <div class="col-2 self-center">
+
+
+                <div class="videolist">
+                  <div class="h6">
+                    Television
+                  </div>
+                  <nav class="vids">
+                    <a class="link" href="http://media.w3.org/2010/05/sintel/trailer.mp4">
+                      <span class="icon-play"><img src="assets/img/icons/icon-play.svg" alt=""></span> test1
+                    </a>
+
+                    <a class="link" href="http://media.w3.org/2010/05/sintel/trailer.mp4">
+                      <span class="icon-play"><img src="assets/img/icons/icon-play.svg" alt=""></span>
+                      test2</a>
+
+                    <a class="link" href="http://media.w3.org/2010/05/sintel/trailer.mp4">
+                      <span class="icon-play"><img src="assets/img/icons/icon-play.svg" alt=""></span> test3
+                      </a>
+
+                    <!-- <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Talkinghead_Media/H264_test4_Talkingheadclipped_mp4_480x320.mp4">test4</a>
+
+                    <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test5_voice_mp4_480x360.mp4">test5</a>
+
+                    <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test7_voiceclip_mp4_480x360.mp4">test6</a>
+
+                    <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test8_voiceclip_mp4_480x320.mp4">test7</a>
+
+                    <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/dw11222.mp4">test8</a>
+
+                    <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4">tsest9</a> -->
+                  </nav>
+                  <div class="h6 pt-4">
+                    Presentation
+                  </div>
+                  <div class="pl-2 pt-1 text-xs">
+                    <ul>
+                      <li><span class="icon-play"><img src="assets/img/icons/icon-docs.svg" alt=""></span> CENTRAL PARK TOWERS BY ORBI AND BLOCK</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-2 relative">
+
+                <div class="vidcontainer">
+                  <video id="myvid">
+
+                    Your browser does not support the video tag.
+
+                  </video>
+
+                  <div class="topControl">
+                    <div class="progress">
+                      <span class="bufferBar"></span>
+                      <span class="timeBar"></span>
+                    </div>
+                    <div class="time">
+                      <span class="current"></span> /
+                      <span class="duration"></span>
+                    </div>
+                  </div>
+
+                  <div class="controllers">
+                    <button class="btnPlay" title="Play/Pause video"></button>
+                    <button class="prevvid disabled" title="Previous video"><i class="fa fa-step-forward fa-rotate-180"></i></button>
+                    <button class="nextvid" title="Next video"><i class="fa fa-step-forward"></i></button>
+                    <button class="sound sound2 btn" title="Mute/Unmute sound"></button>
+                    <div class="volume" title="Set volume">
+                      <span class="volumeBar"></span>
+                    </div>
+                    <button class="btnFS " style="float:right" title="full screen"></button>
+                    <button class="btnspeed " style="float:right" title="Video speed"><i class="fa fa-gear"></i></button>
+                    <ul class="speedcnt">
+                      <li class="spdx50">1.5</li>
+                      <li class="spdx25">1.25</li>
+                      <li class="spdx1 selected">Normal</li>
+                      <li class="spdx050">0.5</li>
+                    </ul>
+                    <button class="btnLight lighton " style="float:right" title="on/off light"><i class="fa fa-lightbulb-o"></i></button>
+                  </div>
+                  <div class="bigplay" title="play the video"><i class="fa fa-play-circle-o"></i></div>
+                  <div class="loading rgba-green"><i class="fa fa-spinner fa-spin"></i></div>
+                </div>
+              </div>
+
             </div>
-          </div>
+
+
+
+          <!-- </div> -->
 
         </div>
 
@@ -493,90 +599,461 @@
 
       <script type="text/javascript" src="assets/js/jquery-3.6.4.min.js"></script>
       <script type="text/javascript" src="assets/js/vendor/slick.min.js"></script>
-      <script type="text/javascript">
-      $(document).ready(function(){
-        $('.slider').slick({
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 3000,
-          prevArrow: false,
-          nextArrow: false,
-          dots: true,
-          responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 2,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 900,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 740,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
+      <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"> -->
+
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        prevArrow: false,
+        nextArrow: false,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
-        });
-
-        // large slider
-        $('.slider-for').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          fade: true,
-          asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          asNavFor: '.slider-for',
-          dots: false,
-          centerMode: true,
-          focusOnSelect: true
-        });
-
+          },
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
 
-
-
-      // stackholders slider
-      $('.stackeholders-slider').slick({
+      // large slider
+      $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
-        dots: false
+        asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
       });
 
-      $(document).ready(function(){
-        $('.mobile-nav').click(function() {
-          $(this).toggleClass("active");
-          $("header").toggleClass("is-open");
-          $("body").toggleClass("overflow-hidden");
-        });
+    });
+
+
+
+    // stackholders slider
+    $('.stackeholders-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      dots: false
+    });
+
+    $(document).ready(function(){
+      $('.mobile-nav').click(function() {
+        $(this).toggleClass("active");
+        $("header").toggleClass("is-open");
+        $("body").toggleClass("overflow-hidden");
       });
-      </script>
-    </body>
-    </html>
+
+
+
+
+    }); // end document ready
+
+
+    // video player
+
+    /* nice mp4 video playlist with jQuery
+    created by: Menni Mehdi
+    in : 23/01/2016
+    license : if you like it use it
+    */
+
+
+    $(document).ready(function()
+
+    {
+      var vid = $('#myvid');
+
+      //default video source
+      $(vid).attr("src", $("a.link:first").attr("href"));
+
+      // addClass playing to first video link
+      $("a.link:first").addClass("playing");
+
+
+      $("a.link").on("click" , function  (event) {
+
+        // prevent link default
+        event.preventDefault();
+
+        // change video source
+        $(vid).attr("src", $(this).attr("href"));
+
+        // remouve class playing from unplayed video href
+        $(".vids a").removeClass("playing");
+
+        // add class playing to video href
+        $(this).addClass("playing");
+
+        // add class paused to give the play/pause button the right look
+        $('.btnPlay').addClass('paused');
+
+        // play the video
+        vid[0].play();
+
+        // adjust prev button state
+        if ($("a.link:first").hasClass("playing")) {
+          $(".prevvid").addClass("disabled");
+        }
+        else {
+          $(".prevvid").removeClass("disabled");
+        }
+
+        // adjust next button state
+        if ($("a.link:last").hasClass("playing")) {
+          $(".nextvid").addClass("disabled");
+        }
+        else {
+          $(".nextvid").removeClass("disabled");
+        }
+
+      });
+
+
+      //VIDEO EVENTS
+      //video canplay event
+      vid.on('canplay', function() {
+        $('.loading').fadeOut(100);
+      });
+
+      //video canplaythrough event
+      //solve Chrome cache issue
+      var completeloaded = false;
+      vid.on('canplaythrough', function() {
+        completeloaded = true;
+      });
+
+      //video ended event
+      vid.on('ended', function() {
+        $('.btnPlay').removeClass('paused');
+        vid[0].pause();
+      });
+
+      //video seeking event
+      vid.on('seeking', function() {
+        //if video fully loaded, ignore loading screen
+        if(!completeloaded) {
+          $('.loading').fadeIn(200);
+        }
+      });
+
+      //video seeked event
+      vid.on('seeked', function() { });
+
+      //video waiting for more data event
+      vid.on('waiting', function() {
+        $('.loading').fadeIn(200);
+      });
+
+      /*controllers*/
+      //before everything get started
+      vid.on('loadedmetadata', function() {
+        //set video properties
+        $('.current').text(timeFormat(0));
+        $('.duration').text(timeFormat(vid[0].duration));
+        if(vid[0].muted)
+        {
+          updateVolume(0, 0);
+        }else
+        {
+          updateVolume(0 , 0.7);
+        }
+      });
+
+      //display video buffering bar
+      var startBuffer = function() {
+        var currentBuffer = vid[0].buffered.end(0);
+        var maxduration = vid[0].duration;
+        var perc = 100 * currentBuffer / maxduration;
+        $('.bufferBar').css('width',perc+'%');
+
+        if(currentBuffer < maxduration) {
+          setTimeout(startBuffer, 500);
+        }
+      };
+
+
+      //display current video play time
+      vid.on('timeupdate', function() {
+        var currentPos = vid[0].currentTime;
+        var maxduration = vid[0].duration;
+        var perc = 100 * currentPos / maxduration;
+        $('.timeBar').css('width',perc+'%');
+        $('.current').text(timeFormat(currentPos));
+      });
+
+      //CONTROLS EVENTS
+      //video screen and play button clicked
+      vid.on('click', function() { playpause(); } );
+      $('.btnPlay').on('click', function() { playpause(); } );
+      var playpause = function() {
+        if(vid[0].paused || vid[0].ended) {
+          $('.btnPlay').addClass('paused');
+          vid[0].play();
+        }
+        else {
+          $('.btnPlay').removeClass('paused');
+          vid[0].pause();
+        }
+      };
+
+      //VIDEO PROGRESS BAR
+      //when video timebar clicked
+      var timeDrag = false;   /* check for drag event */
+      $('.progress').on('mousedown', function(e) {
+        timeDrag = true;
+        updatebar(e.pageX);
+      });
+      $(document).on('mouseup', function(e) {
+        if(timeDrag) {
+          timeDrag = false;
+          updatebar(e.pageX);
+        }
+      });
+      $(document).on('mousemove', function(e) {
+        if(timeDrag) {
+          updatebar(e.pageX);
+        }
+      });
+      var updatebar = function(x) {
+        var progress = $('.progress');
+
+        //calculate drag position
+        //and update video currenttime
+        //as well as progress bar
+        var maxduration = vid[0].duration;
+        var position = x - progress.offset().left;
+        var percentage = 100 * position / progress.width();
+        if(percentage > 100) {
+          percentage = 100;
+        }
+        if(percentage < 0) {
+          percentage = 0;
+        }
+        $('.timeBar').css('width',percentage+'%');
+        vid[0].currentTime = maxduration * percentage / 100;
+      };
+      //sound button clicked
+      $('.sound').click(function() {
+        vid[0].muted = !vid[0].muted;
+        $(this).toggleClass('muted');
+        if(vid[0].muted) {
+          $('.volumeBar').css('width',0);
+        }
+        else{
+          $('.volumeBar').css('width', vid[0].volume*100+'%');
+        }
+      });
+
+      //VOLUME BAR
+      //volume bar event
+      var volumeDrag = false;
+      $('.volume').on('mousedown', function(e) {
+        volumeDrag = true;
+        vid[0].muted = false;
+        $('.sound').removeClass('muted');
+        updateVolume(e.pageX);
+      });
+      $(document).on('mouseup', function(e) {
+        if(volumeDrag) {
+          volumeDrag = false;
+          updateVolume(e.pageX);
+        }
+      });
+      $(document).on('mousemove', function(e) {
+        if(volumeDrag) {
+          updateVolume(e.pageX);
+        }
+      });
+      var updateVolume = function(x, vol) {
+        var volume = $('.volume');
+        var percentage;
+        //if only volume have specificed
+        //then direct update volume
+        if(vol) {
+          percentage = vol * 100;
+        }
+        else {
+          var position = x - volume.offset().left;
+          percentage = 100 * position / volume.width();
+        }
+
+        if(percentage > 100) {
+          percentage = 100;
+        }
+        if(percentage < 0) {
+          percentage = 0;
+        }
+
+        //update volume bar and video volume
+        $('.volumeBar').css('width',percentage+'%');
+        vid[0].volume = percentage / 100;
+
+        //change sound icon based on volume
+        if(vid[0].volume == 0){
+          $('.sound').removeClass('sound2').addClass('muted');
+        }
+        else if(vid[0].volume > 0.5){
+          $('.sound').removeClass('muted').addClass('sound2');
+        }
+        else{
+          $('.sound').removeClass('muted').removeClass('sound2');
+        }
+
+      };
+
+      //speed text clicked
+      $('.spdx50').on('click', function() { fastfowrd(this, 1.5); });
+      $('.spdx25').on('click', function() { fastfowrd(this, 1.25); });
+      $('.spdx1').on('click', function() { fastfowrd(this, 1); });
+      $('.spdx050').on('click', function() { fastfowrd(this, 0.5); });
+      var fastfowrd = function(obj, spd) {
+        $('.speedcnt li').removeClass('selected');
+        $(obj).addClass('selected');
+        vid[0].playbackRate = spd;
+        vid[0].play();
+        $("ul.speedcnt").fadeOut("fast");
+        $('.btnPlay').addClass('paused');
+      };
+      $(".btnspeed").click( function() {
+
+        $("ul.speedcnt").slideToggle(100);
+      });
+
+      //fullscreen button clicked
+      $('.btnFS').on('click', function() {
+        if($.isFunction(vid[0].webkitEnterFullscreen)) {
+          vid[0].webkitEnterFullscreen();
+        }
+        else if ($.isFunction(vid[0].mozRequestFullScreen)) {
+          vid[0].mozRequestFullScreen();
+        }
+        else {
+          alert('Your browsers doesn\'t support fullscreen');
+        }
+      });
+
+      //light bulb button clicked
+      $('.btnLight').click(function() {
+        $(this).toggleClass('lighton');
+
+        //if lightoff, create an overlay
+        if(!$(this).hasClass('lighton')) {
+          $('body').append('<div class="overlay"></div>');
+          $('.overlay').css({
+            'position':'absolute',
+            'width':100+'%',
+            'height':$(document).height(),
+            'background':'#000',
+            'opacity':0.9,
+            'top':0,
+            'left':0,
+            'z-index':999
+          });
+          $('.vidcontainer').css({
+            'z-index':1000
+          });
+        }
+        //if lighton, remove overlay
+        else {
+          $('.overlay').remove();
+        }
+      });
+
+      //hide pause button if video onplaying
+      //if (vid.onplaying = true) { $('.btnPlay').addClass('paused'); };
+
+
+      //previous video button
+      $(".prevvid").click(function(){
+        $(vid).attr("src", $(".playing").prev().attr("href"));
+        vid[0].play();
+        $(".playing").prev().addClass("playing");
+        $(".playing:last").removeClass("playing");
+        $('.btnPlay').addClass('paused');
+        $(".nextvid").removeClass("disabled");
+        if ($("a.link:first").hasClass("playing")) {
+          $(this).addClass("disabled");
+        }else {
+          $(this).removeClass("disabled");
+        };
+      });
+
+      //previous video button
+      $(".nextvid").click(function(){
+        $(vid).attr("src", $(".playing").next().attr("href"));
+        vid[0].play();
+        $(".playing").next().addClass("playing");
+        $(".playing:first").removeClass("playing");
+        $('.btnPlay').addClass('paused');
+        $(".prevvid").removeClass("disabled");
+        if ($("a.link:last").hasClass("playing")) {
+          $(this).addClass("disabled");
+        }else {
+          $(this).removeClass("disabled");
+        };
+
+      });
+
+
+
+      //Time format converter - 00:00
+      var timeFormat = function(seconds){
+        var m = Math.floor(seconds/60)<10 ? "0"+Math.floor(seconds/60) : Math.floor(seconds/60);
+        var s = Math.floor(seconds-(m*60))<10 ? "0"+Math.floor(seconds-(m*60)) : Math.floor(seconds-(m*60));
+        return m+":"+s;
+      };
+      $(".closeme , .bigplay").click(function(){
+        $("this,.ads,.bigplay").fadeOut(200);
+        vid[0].play();
+        $('.btnPlay').addClass('paused');
+      });
+      //end
+    });
+
+
+    </script>
+  </body>
+  </html>

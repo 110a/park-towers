@@ -89,6 +89,11 @@
     left: 25px;
     background-image: url('../../img/icons/icon-arrow-left.svg')
 }
+.slider-nav .slick-prev
+{
+    left: -60px;
+    background-image: url('../../img/icons/icon-arrow-left.svg')
+}
 /* [dir='rtl'] .slick-prev
 {
     right: -25px;
@@ -106,6 +111,11 @@
 .slick-next
 {
     right: 25px;
+    background-image: url('../../img/icons/icon-arrow-right.svg')
+}
+.slider-nav .slick-next
+{
+    right: -60px;
     background-image: url('../../img/icons/icon-arrow-right.svg')
 }
 /* [dir='rtl'] .slick-next
