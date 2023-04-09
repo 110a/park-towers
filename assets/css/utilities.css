@@ -282,3 +282,9 @@ color: #ffffff;
 video {
   width: 100%;
 }
+.hover-opacity {
+  transition: opacity .3s;
+}
+.hover-opacity:hover {
+  opacity: 0.6;
+}
