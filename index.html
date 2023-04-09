@@ -11,8 +11,24 @@
   <link rel="stylesheet" href="assets/css/vendor/slick.css">
   <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<style media="screen">
+.progressive-image .loadingImage {
+  filter: blur(5px);
+}
+.progressive-image .overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+opacity: 0;
+transition: opacity 200ms ease-in;
+}
+</style>
+
 </head>
 <body class="helvetica">
+
   <header class="clr-yellow bg-green text-xl">
     <div class="flex items-center justify-between">
       <div class="logo">
@@ -33,11 +49,11 @@
         </nav>
         <div class="lang-switch flex pl-4">
           <div class="">
-            EN
+            <a href="">EN</a>
           </div>
           <span> | </span>
           <div class="">
-            GE
+            <a href="">GE</a>
           </div>
         </div>
         <div class="mobile-nav pl-3">
@@ -51,24 +67,30 @@
 
     </div>
   </header>
-  <section class="header">
+
+  <section class="header progressive-image">
     <div class="main-banner relative">
-      <div class="img-full" style="background-image: url(assets/img/banner-main.jpg)">
-        <div class="main-banner--info rgba-green clr-yellow p-6">
-          <h1 class="text-3xl">NEW HOTELS BY ORBI GROUP</h1>
-          <div class="pt-1">
-            5 STAR HOTELS
-          </div>
-          <div class="pt-4 uppercase text-3xl">
-            FOR <span class="clr-green bg-yellow brd-radius">1 800 000</span>
-          </div>
-          <div class="pt-4 uppercase text-3xl">
-            ANNUAL INCOME <span class="clr-green bg-yellow brd-radius">400 000</span>
-          </div>
+      <div class="img-full loadingImage" style="background-image: url(assets/img/banner-main-preload.jpg)" data-image="assets/img/banner-main.jpg">
+
+      </div>
+      <div class="overlay img-full"></div>
+      <div class="main-banner--info rgba-green clr-yellow p-6">
+        <h1 class="text-3xl">NEW HOTELS BY ORBI GROUP</h1>
+        <div class="pt-1">
+          5 STAR HOTELS
+        </div>
+        <div class="pt-4 uppercase text-3xl">
+          FOR <span class="clr-green bg-yellow brd-radius">1 800 000</span>
+        </div>
+        <div class="pt-4 uppercase text-3xl">
+          ANNUAL INCOME <span class="clr-green bg-yellow brd-radius">400 000</span>
         </div>
       </div>
     </div>
   </section>
+
+
+
 
   <section class="vision bg-yellow pt-4 pb-4 pl-6" id="vision">
     <div class="section-title text-3xl flex items-center">
@@ -1168,7 +1190,27 @@ $(document).ready(function()
   //end
 });
 
+// load image
+$(function(){
 
+  $('.progressive-image').each(function(){
+
+    var image = new Image();
+    var previewImage = $(this).find('.loadingImage');
+    var newImage = $(this).find('.overlay');
+
+    image.onload = function(){
+      newImage.css('background-image', 'url(' + image.src + ')');
+      newImage.css('opacity', '1');
+
+      console.log('complete');
+    };
+
+    image.src = previewImage.data('image');
+
+  });
+
+});
 </script>
 </body>
 </html>
