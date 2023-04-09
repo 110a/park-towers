@@ -47,6 +47,9 @@ nav li {
   width: 11.6rem;
 }
 .lang-switch span {
+  font-size: 1.9rem;
+}
+.lang-switch span {
   padding: 0 1rem;
 }
 @media only screen and (max-width: 1200px) {
