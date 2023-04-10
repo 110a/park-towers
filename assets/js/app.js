@@ -60,14 +60,101 @@ $(document).ready(function() {
   }); // end header
 
   // logo scroll to top
-  // variables
-    var toTop = $('.logo');
-    // logic
-    toTop.on('click', function() {
-      $('html, body').animate({
-        scrollTop: $('html, body').offset().top,
-      });
+  var toTop = $('.logo');
+  // logic
+  toTop.on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('html, body').offset().top,
     });
+  });
+
+  // nav mobile menu
+  $('.mobile-nav').click(function() {
+    $(this).toggleClass("active");
+    $("header").toggleClass("is-open");
+    $("body").toggleClass("overflow-hidden");
+  });
+  
+  // Slider vision
+  $('.slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    autoplay: true,
+    infinite: true,
+    autoplaySpeed: 3000,
+    prevArrow: false,
+    nextArrow: false,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  // gallery slider
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+
 
 
 }); // end document ready

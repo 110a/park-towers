@@ -229,6 +229,8 @@
 .max-w-9 {max-width: 90rem;}
 .max-w-10 {max-width: 100rem;}
 
+.w-full {width: 100%;}
+
 /* bg img sizes */
 .img-full {
   background-position: center;

@@ -176,8 +176,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     padding: 5px;
 
     cursor: pointer;
@@ -197,9 +197,9 @@
 {
     opacity: 1;
 }
-.slick-dots li button:before
+/* .slick-dots li button:before
 {
-    /* font-family: 'slick'; */
+    font-family: 'slick';
     font-size: 6px;
     line-height: 20px;
 
@@ -218,7 +218,7 @@
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
+} */
 .slick-dots li.slick-active
 {
     opacity: .75;
