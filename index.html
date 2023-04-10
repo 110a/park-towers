@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Central Park Towers - The New Hotel Hub in Tbilisi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/typography.css">
   <link rel="stylesheet" href="assets/css/reset.css">
@@ -10,50 +10,75 @@
   <link rel="stylesheet" href="assets/css/utilities.css">
   <link rel="stylesheet" href="assets/css/vendor/slick.css">
   <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 
-<style media="screen">
-.progressive-image .loadingImage {
-  filter: blur(5px);
-}
-.progressive-image .overlay {
-position: absolute;
-width: 100%;
-height: 100%;
-top: 0;
-opacity: 0;
-transition: opacity 200ms ease-in;
-}
-</style>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#ffbc00">
+  <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#173f26">
+  <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#173f26">
 
+
+  <meta name="keywords" content="Central Park Towers, ORBI GROUP, hotel, block ">
+
+  <!-- smo facebook  -->
+  <meta property="og:title" content="Central Park Towers | cpt.ge">
+  <meta property="og:description" content="The New Hotel Hub in Tbilisi">
+  <meta property="og:image" content="ctp.ge/assets/img/seo/ctp-seo-img.jpg">
+  <meta property="og:og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.cpt.ge/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en-US" />
+
+  <!-- smo twiiter  -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:url" content="https://www.cpt.ge/">
+  <meta name="twitter:title" content="Central Park Towers">
+  <meta name="twitter:description" content="The New Hotel Hub in Tbilisi">
+  <meta name="twitter:image" content="ctp.ge/assets/img/seo/ctp-seo-img.jpg"/>
+
+
+  <meta property="og:title" content="Central Park Towers">
+  <meta property="og:description" content="The New Hotel Hub in Tbilisi">
+  <meta property="og:image" content="ctp.ge/assets/img/seo/ctp-seo-img.jpg">
+  <meta property="og:url" content="{https://www.cpt.ge/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en-US" />
+  <!-- end seo -->
 </head>
 <body class="helvetica">
 
-  <header class="clr-yellow bg-green text-xl">
+  <header class="clr-yellow bg-green">
     <div class="flex items-center justify-between">
       <div class="logo">
         <img src="assets/img/logo/logo-cpt.svg" alt="">
       </div>
 
-      <div class="flex items-end">
-        <nav class="pl-6 pr-1">
-          <ul class="flex capitalize" id="mainNav">
-            <li><a href="#vision">Vision</a></li>
-            <li><a href="#product">Product</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#management">Management</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#stakeholders">Stakeholders</a></li>
-            <li><a href="#contact">Contact</a></li>
+      <div class="flex items-end fade-in">
+        <nav class="pr-1">
+          <ul class="flex capitalize">
+            <li><a class="hover-opacity" href="#vision">Vision</a></li>
+            <li><a class="hover-opacity" href="#product">Product</a></li>
+            <li><a class="hover-opacity" href="#gallery">Gallery</a></li>
+            <li><a class="hover-opacity" href="#management">Management</a></li>
+            <li><a class="hover-opacity" href="#media">Media</a></li>
+            <li><a class="hover-opacity" href="#stakeholders">Stakeholders</a></li>
+            <li><a class="hover-opacity" href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="lang-switch flex pl-4">
           <div class="">
-            <a href="">EN</a>
+            <a class="hover-opacity" href="">EN</a>
           </div>
           <span> | </span>
           <div class="">
-            <a href="">GE</a>
+            <a class="hover-opacity" href="">GE</a>
           </div>
         </div>
         <div class="mobile-nav pl-3">
@@ -736,6 +761,7 @@ type="video/mp4">
 
 <script type="text/javascript" src="assets/js/jquery-3.6.4.min.js"></script>
 <script type="text/javascript" src="assets/js/vendor/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
 <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"> -->
 
 </script>
@@ -1190,27 +1216,6 @@ $(document).ready(function()
   //end
 });
 
-// load image
-$(function(){
-
-  $('.progressive-image').each(function(){
-
-    var image = new Image();
-    var previewImage = $(this).find('.loadingImage');
-    var newImage = $(this).find('.overlay');
-
-    image.onload = function(){
-      newImage.css('background-image', 'url(' + image.src + ')');
-      newImage.css('opacity', '1');
-
-      console.log('complete');
-    };
-
-    image.src = previewImage.data('image');
-
-  });
-
-});
 </script>
 </body>
 </html>

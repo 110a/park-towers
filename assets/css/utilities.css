@@ -1,3 +1,6 @@
+.overflow-hidden {
+  overflow: hidden;
+}
 /* flex */
 .flex { display: flex;}
 .flex-inline { display: inline-flex;}

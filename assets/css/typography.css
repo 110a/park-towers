@@ -39,13 +39,11 @@ html {
 @media only screen and (max-width: 1800px) {
   html {
       font-size: 56.25%; /*1 rem = 9px; 9/16 = 56.25%; */
-
   }
 }
 @media only screen and (max-width: 900px) {
   html {
-      font-size: 50%; /*1 rem = 6px; 6/16 = 56.25%; */
-
+      font-size: 52%;
   }
 }
 .helvetica:lang(en) {
